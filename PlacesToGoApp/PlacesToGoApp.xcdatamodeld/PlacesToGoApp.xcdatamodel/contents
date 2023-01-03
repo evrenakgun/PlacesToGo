@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="21G320" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Cities" representedClassName="Cities" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="districts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Districts"/>
+    </entity>
+    <entity name="Countries" representedClassName="Countries" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="cities" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cities"/>
+    </entity>
+    <entity name="Districts" representedClassName="Districts" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="places" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Places" inverseName="district" inverseEntity="Places"/>
+    </entity>
+    <entity name="Places" representedClassName="Places" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="commentary" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="district" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Districts" inverseName="places" inverseEntity="Districts"/>
+    </entity>
+</model>
