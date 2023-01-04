@@ -496,7 +496,7 @@
                                 <rect key="frame" x="29" y="116" width="335" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" name="AccentColor"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JFb-aS-3as">
@@ -522,6 +522,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="BfB-Y4-2im"/>
+                    <connections>
+                        <outlet property="imageView" destination="JFb-aS-3as" id="hzA-vK-GCi"/>
+                        <outlet property="placeAddressLabel" destination="FAs-ST-egd" id="LWQ-wX-760"/>
+                        <outlet property="placeCommentaryLabel" destination="rSA-pN-m3j" id="alf-Oc-f4d"/>
+                        <outlet property="placeNameLabel" destination="tb9-MA-bTg" id="Xuh-No-Lu3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wls-Bf-eTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

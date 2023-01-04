@@ -109,7 +109,12 @@ class AddPlacesViewController: UIViewController, UITextFieldDelegate, UIImagePic
             print("Hata!")
         }
         
+        // Uygulamada diğer viewController'lara veya herhangi bir yere haber göndermek için.
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "newData"), object: nil)
+        
+        // Veri ekledikten sonra bir önceki view controller'a gider ve yeni verileri ekler.
+        self.navigationController?.popViewController(animated: true)
+        
     }
-    
 
 }
