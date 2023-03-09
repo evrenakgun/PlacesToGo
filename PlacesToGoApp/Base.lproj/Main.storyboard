@@ -6,6 +6,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -121,13 +122,13 @@
                                 <rect key="frame" x="33" y="459" width="326" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kullanıcı Adı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lmY-z5-0FY">
                                 <rect key="frame" x="33" y="501" width="326" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPU-Ad-a7U">
                                 <rect key="frame" x="125" y="658" width="143" height="60"/>
@@ -144,13 +145,13 @@
                                 <rect key="frame" x="33" y="543" width="326" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre (Tekrar)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ifx-9r-f3b">
                                 <rect key="frame" x="33" y="585" width="326" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ybS-4L-RZb"/>
@@ -178,43 +179,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ülke (örn.: Türkiye)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I0J-sL-bw7">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ülke Seçiniz." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I0J-sL-bw7">
                                 <rect key="frame" x="36" y="134" width="321" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="VY2-zK-NHF"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şehir (örn.: İstanbul)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lP2-gf-Ut6">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şehir Seçiniz." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lP2-gf-Ut6">
                                 <rect key="frame" x="36" y="176" width="321" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="ncA-Jj-Dyb"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Semt (örn.: Kadıköy)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xCh-hC-lwk">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Semt Seçiniz." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xCh-hC-lwk">
                                 <rect key="frame" x="36" y="218" width="321" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="LR5-qb-eFR"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mekan Adı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ub0-me-GDG">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mekan Adı Giriniz." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ub0-me-GDG">
                                 <rect key="frame" x="36" y="260" width="321" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="RnI-i6-AYC"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HnB-pa-S70">
-                                <rect key="frame" x="127" y="595" width="138" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="WSc-dO-YeK"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HnB-pa-S70">
+                                <rect key="frame" x="132" y="719" width="129" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Ekle">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -223,72 +214,64 @@
                                     <action selector="addButtonAction:" destination="joy-vz-6DV" eventType="touchUpInside" id="hmT-Ke-w9L"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jyG-vK-cWr">
-                                <rect key="frame" x="106" y="433.66666666666652" width="181" height="140.99999999999997"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Açıklama Giriniz." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="59p-tT-PXX">
+                                <rect key="frame" x="36" y="302" width="321" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="systemGray3Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="location.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uQ5-Me-axI">
+                                <rect key="frame" x="303" y="481" width="54" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Açık Adres" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zVe-oh-zzs">
-                                <rect key="frame" x="36" y="302" width="321" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="6qj-Sp-gVa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Açıklama" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="amn-EU-o5N">
-                                <rect key="frame" x="36" y="344" width="321" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="dga-yY-VjC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Konum eklemek için lütfen görsele tıklayın." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYz-Ii-CSp">
+                                <rect key="frame" x="36" y="481" width="267" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iXv-qB-VL5">
+                                <rect key="frame" x="76" y="522" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fkA-ih-CdS">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2w6-y2-2Ss">
+                                        <rect key="frame" x="56" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dAr-w6-OfG">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hww-bo-ld6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="xCh-hC-lwk" firstAttribute="leading" secondItem="ub0-me-GDG" secondAttribute="leading" id="2pN-i7-z0e"/>
-                            <constraint firstItem="HnB-pa-S70" firstAttribute="centerX" secondItem="8ZV-mF-c4w" secondAttribute="centerX" id="37o-1c-m4d"/>
-                            <constraint firstItem="I0J-sL-bw7" firstAttribute="leading" secondItem="lP2-gf-Ut6" secondAttribute="leading" id="4tg-M4-Z1f"/>
-                            <constraint firstItem="xCh-hC-lwk" firstAttribute="top" secondItem="lP2-gf-Ut6" secondAttribute="bottom" constant="8" symbolic="YES" id="5Ur-qF-J6C"/>
-                            <constraint firstItem="I0J-sL-bw7" firstAttribute="leading" secondItem="hww-bo-ld6" secondAttribute="leading" constant="36" id="92i-Vp-sbG"/>
-                            <constraint firstItem="amn-EU-o5N" firstAttribute="top" secondItem="zVe-oh-zzs" secondAttribute="bottom" constant="8" symbolic="YES" id="G9F-Pa-2cH"/>
-                            <constraint firstItem="I0J-sL-bw7" firstAttribute="trailing" secondItem="lP2-gf-Ut6" secondAttribute="trailing" id="NN8-YI-3f6"/>
-                            <constraint firstItem="amn-EU-o5N" firstAttribute="centerX" secondItem="jyG-vK-cWr" secondAttribute="centerX" id="RxT-v1-roi"/>
-                            <constraint firstItem="lP2-gf-Ut6" firstAttribute="top" secondItem="I0J-sL-bw7" secondAttribute="bottom" constant="8" symbolic="YES" id="TQ5-iG-d9o"/>
-                            <constraint firstItem="HnB-pa-S70" firstAttribute="top" secondItem="jyG-vK-cWr" secondAttribute="bottom" constant="19.000000000000114" id="TdW-1e-E8O"/>
-                            <constraint firstItem="lP2-gf-Ut6" firstAttribute="leading" secondItem="xCh-hC-lwk" secondAttribute="leading" id="Z9C-1C-gBm"/>
-                            <constraint firstItem="jyG-vK-cWr" firstAttribute="top" secondItem="amn-EU-o5N" secondAttribute="bottom" constant="53.999999999999829" id="a7T-1R-nOl"/>
-                            <constraint firstItem="jyG-vK-cWr" firstAttribute="leading" secondItem="hww-bo-ld6" secondAttribute="leading" constant="106" id="fcn-M6-0Mp"/>
-                            <constraint firstItem="jyG-vK-cWr" firstAttribute="centerX" secondItem="HnB-pa-S70" secondAttribute="centerX" id="hHo-yx-yrF"/>
-                            <constraint firstItem="zVe-oh-zzs" firstAttribute="trailing" secondItem="amn-EU-o5N" secondAttribute="trailing" id="j4Q-5z-vfo"/>
-                            <constraint firstItem="hww-bo-ld6" firstAttribute="bottom" secondItem="HnB-pa-S70" secondAttribute="bottom" constant="139" id="jHR-Vm-M1f"/>
-                            <constraint firstItem="zVe-oh-zzs" firstAttribute="leading" secondItem="amn-EU-o5N" secondAttribute="leading" id="kgW-Qs-W01"/>
-                            <constraint firstItem="zVe-oh-zzs" firstAttribute="top" secondItem="ub0-me-GDG" secondAttribute="bottom" constant="8" symbolic="YES" id="o1o-ff-Ge4"/>
-                            <constraint firstItem="I0J-sL-bw7" firstAttribute="top" secondItem="hww-bo-ld6" secondAttribute="top" constant="31" id="sV5-6A-q76"/>
-                            <constraint firstItem="ub0-me-GDG" firstAttribute="top" secondItem="xCh-hC-lwk" secondAttribute="bottom" constant="8" symbolic="YES" id="tn3-5u-q8l"/>
-                            <constraint firstItem="lP2-gf-Ut6" firstAttribute="trailing" secondItem="xCh-hC-lwk" secondAttribute="trailing" id="urs-SN-ckF"/>
-                            <constraint firstItem="xCh-hC-lwk" firstAttribute="trailing" secondItem="ub0-me-GDG" secondAttribute="trailing" id="vui-yB-MkS"/>
-                            <constraint firstItem="ub0-me-GDG" firstAttribute="trailing" secondItem="zVe-oh-zzs" secondAttribute="trailing" id="xg0-E6-r1A"/>
-                            <constraint firstItem="ub0-me-GDG" firstAttribute="leading" secondItem="zVe-oh-zzs" secondAttribute="leading" id="yJz-dg-sJu"/>
-                            <constraint firstItem="HnB-pa-S70" firstAttribute="leading" secondItem="hww-bo-ld6" secondAttribute="leading" constant="127" id="yY0-DL-mIm"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Mekan Ekleyin" id="9tR-0D-eOj"/>
                     <connections>
-                        <outlet property="addressTextField" destination="zVe-oh-zzs" id="Fu2-es-boX"/>
                         <outlet property="cityTextField" destination="lP2-gf-Ut6" id="06u-Bf-fJW"/>
-                        <outlet property="commentaryTextField" destination="amn-EU-o5N" id="tuJ-vq-aI3"/>
                         <outlet property="countryTextField" destination="I0J-sL-bw7" id="PA0-aL-y8t"/>
                         <outlet property="districtTextField" destination="xCh-hC-lwk" id="BWy-AR-I4u"/>
-                        <outlet property="imageView" destination="jyG-vK-cWr" id="1gu-Jm-eZ3"/>
                         <outlet property="nameTextField" destination="ub0-me-GDG" id="ExL-mL-lVv"/>
+                        <outlet property="noteTextView" destination="59p-tT-PXX" id="hor-Bi-WTI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OEB-MI-wKx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1980.916030534351" y="-794.36619718309862"/>
         </scene>
-        <!--Sign In View Controller-->
+        <!--Giriş Yap-->
         <scene sceneID="HuB-0H-Kvc">
             <objects>
                 <viewController id="MX5-K5-UHv" customClass="SignInViewController" customModule="PlacesToGo" customModuleProvider="target" sceneMemberID="viewController">
@@ -343,7 +326,7 @@
                             <constraint firstItem="u6B-hS-Asf" firstAttribute="centerX" secondItem="Mno-qr-Yft" secondAttribute="centerX" id="pEh-pV-knx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="CGa-QP-7nu"/>
+                    <navigationItem key="navigationItem" title="Giriş Yap" id="CGa-QP-7nu"/>
                     <connections>
                         <outlet property="imageView" destination="7hb-f2-Cqb" id="7xz-XE-yQE"/>
                         <outlet property="passwordTextField" destination="u6B-hS-Asf" id="pad-q8-Hzq"/>
@@ -381,157 +364,11 @@
                     <connections>
                         <outlet property="tableView" destination="cA7-8o-pLf" id="SNU-A4-mkI"/>
                         <segue destination="joy-vz-6DV" kind="show" identifier="toAddPlacesVC" id="MFo-4p-pL0"/>
-                        <segue destination="89X-HW-A4N" kind="show" identifier="toCitiesVC" id="Dg2-kG-RYK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QO8-f6-jag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1982" y="-27"/>
-        </scene>
-        <!--Şehir Seçin-->
-        <scene sceneID="gdj-fE-8Z5">
-            <objects>
-                <viewController id="89X-HW-A4N" customClass="CityViewController" customModule="PlacesToGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QrL-I8-uZT">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3XD-kJ-aiJ">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="bOE-1E-T3d"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="bOE-1E-T3d" firstAttribute="bottom" secondItem="3XD-kJ-aiJ" secondAttribute="bottom" id="K8e-mb-OLO"/>
-                            <constraint firstItem="3XD-kJ-aiJ" firstAttribute="top" secondItem="bOE-1E-T3d" secondAttribute="top" id="OnL-v2-kYI"/>
-                            <constraint firstItem="bOE-1E-T3d" firstAttribute="trailing" secondItem="3XD-kJ-aiJ" secondAttribute="trailing" id="e4W-lK-okI"/>
-                            <constraint firstItem="3XD-kJ-aiJ" firstAttribute="leading" secondItem="bOE-1E-T3d" secondAttribute="leading" id="lXH-H2-zNQ"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Şehir Seçin" id="ifa-6Y-L53"/>
-                    <connections>
-                        <outlet property="tableView" destination="3XD-kJ-aiJ" id="GbP-vO-wc0"/>
-                        <segue destination="3O2-VJ-WAx" kind="show" identifier="toDistrictsVC" id="rQq-do-UrN"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dwz-pX-kWF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2938" y="-27"/>
-        </scene>
-        <!--Semt Seçin-->
-        <scene sceneID="HZ2-bR-Vmq">
-            <objects>
-                <viewController id="3O2-VJ-WAx" customClass="DistrictViewController" customModule="PlacesToGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="FDr-Qt-oaD">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="N1H-bL-m6t">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Uj3-9R-6S7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Uj3-9R-6S7" firstAttribute="trailing" secondItem="N1H-bL-m6t" secondAttribute="trailing" id="0Ww-t3-IZ2"/>
-                            <constraint firstItem="N1H-bL-m6t" firstAttribute="top" secondItem="Uj3-9R-6S7" secondAttribute="top" id="c4b-h5-25y"/>
-                            <constraint firstItem="Uj3-9R-6S7" firstAttribute="bottom" secondItem="N1H-bL-m6t" secondAttribute="bottom" id="sAS-JT-fBe"/>
-                            <constraint firstItem="N1H-bL-m6t" firstAttribute="leading" secondItem="Uj3-9R-6S7" secondAttribute="leading" id="yja-EV-gcV"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Semt Seçin" id="shM-tu-w0C"/>
-                    <connections>
-                        <outlet property="tableView" destination="N1H-bL-m6t" id="buP-MP-gYx"/>
-                        <segue destination="IAm-oY-cKD" kind="show" identifier="toPlacesVC" id="fq2-aH-o2u"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IaV-Rm-8tS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3859" y="-27"/>
-        </scene>
-        <!--Mekan Seçin-->
-        <scene sceneID="NmH-8u-T7I">
-            <objects>
-                <viewController id="IAm-oY-cKD" customClass="PlacesViewController" customModule="PlacesToGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cOF-on-mfS">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="O2z-IB-ZI8">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="AGY-Sx-6YD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="O2z-IB-ZI8" firstAttribute="leading" secondItem="AGY-Sx-6YD" secondAttribute="leading" id="UGk-OW-9Tj"/>
-                            <constraint firstItem="O2z-IB-ZI8" firstAttribute="top" secondItem="AGY-Sx-6YD" secondAttribute="top" id="ame-Sp-KWp"/>
-                            <constraint firstItem="AGY-Sx-6YD" firstAttribute="trailing" secondItem="O2z-IB-ZI8" secondAttribute="trailing" id="icM-Cw-VT9"/>
-                            <constraint firstItem="AGY-Sx-6YD" firstAttribute="bottom" secondItem="O2z-IB-ZI8" secondAttribute="bottom" id="v8h-GZ-Eli"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Mekan Seçin" id="cpq-EJ-Tgz"/>
-                    <connections>
-                        <outlet property="tableView" destination="O2z-IB-ZI8" id="nan-dc-AJL"/>
-                        <segue destination="fFc-AD-hGF" kind="show" identifier="toSelectedPlaceVC" id="P3I-0m-WEg"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gIN-UR-3a4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4752" y="-27"/>
-        </scene>
-        <!--Selected Place View Controller-->
-        <scene sceneID="rwt-NJ-23C">
-            <objects>
-                <viewController id="fFc-AD-hGF" customClass="SelectedPlaceViewController" customModule="PlacesToGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4fw-c2-g5P">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="placeName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tb9-MA-bTg">
-                                <rect key="frame" x="29" y="116" width="335" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JFb-aS-3as">
-                                <rect key="frame" x="62" y="175" width="268" height="220"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="address" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAs-ST-egd">
-                                <rect key="frame" x="16" y="694" width="361" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="commentary" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSA-pN-m3j">
-                                <rect key="frame" x="16" y="403" width="361" height="270"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="MUd-tl-jWW"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="BfB-Y4-2im"/>
-                    <connections>
-                        <outlet property="imageView" destination="JFb-aS-3as" id="hzA-vK-GCi"/>
-                        <outlet property="placeAddressLabel" destination="FAs-ST-egd" id="LWQ-wX-760"/>
-                        <outlet property="placeCommentaryLabel" destination="rSA-pN-m3j" id="alf-Oc-f4d"/>
-                        <outlet property="placeNameLabel" destination="tb9-MA-bTg" id="Xuh-No-Lu3"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wls-Bf-eTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5693.8931297709923" y="-27.464788732394368"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RNQ-Kj-SCd">
@@ -562,13 +399,16 @@
         <segue reference="Z6c-8q-4h8"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="photo.fill" catalog="system" width="128" height="93"/>
+        <image name="location.fill" catalog="system" width="128" height="119"/>
         <image name="placesToGo" width="500" height="500"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

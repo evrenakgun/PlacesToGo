@@ -77,7 +77,7 @@ class CountryViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     // Mekan ekleme butonunun aksiyonu
     @objc func addButtonAction() {
-        performSegue(withIdentifier: "toAddPlacesVC", sender: nil)
+        performSegue(withIdentifier: "toSelectingVC", sender: nil)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -91,11 +91,7 @@ class CountryViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toCitiesVC" {
-            let destinationVC = segue.destination as! CityViewController
-            destinationVC.selectedCityName = selectedCountryName
-            destinationVC.selectedCityUUID = selectedCountryUUID
-        }
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
